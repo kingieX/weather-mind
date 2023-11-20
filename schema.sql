@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS weather_data;
+
+CREATE TABLE weather_data (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    created TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    Humidity TEXT NOT NULL,
+    DHTTemperature TEXT NOT NULL,
+    Pressure  TEXT NOT NULL,
+    Altitude TEXT NOT NULL,
+    BMPTemperature TEXT NOT NULL,
+    heatIndex TEXT NOT NULL
+);
+
